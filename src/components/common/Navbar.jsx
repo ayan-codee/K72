@@ -1,7 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import NavLinkPage from './NavLinkPage';
+import { NavBarContext } from './NavBarContextProvider';
 
 const Navbar = () => {
+    const [nav, setNav] = useContext(NavBarContext);
     const NagGreenRef = useRef(null);
     const NavBarColor1 = useRef(null);
     const NavBarColor2 = useRef(null);
@@ -28,7 +30,9 @@ const Navbar = () => {
            >
             <div ref={NagGreenRef} className='bg-[#d3fd50] cursor-pointer transition-all h-0 w-full absolute top-0 left-0'></div>
             <div className='h-full cursor-pointer w-full absolute top-0 p-4 px-6 items-end flex flex-col gap-1'
-            onClick={<NavLinkPage/>}
+            onClick={()=>{
+            setNav(true)
+            }}
             >
                 <div ref={NavBarColor1} className='w-15 h-[3px] bg-white'></div>
                 <div ref={NavBarColor2} className='w-8 h-[3px] bg-white'></div>

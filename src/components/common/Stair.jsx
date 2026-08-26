@@ -13,7 +13,7 @@ const Stair = (props) => {
         gsap.set('.stair', { y: '0%' })
 
         tl.to('.stair', {
-            y: '100%',
+            y: '-100%',
             stagger: {
                 each: 0.1,
                 from: "start"
