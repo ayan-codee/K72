@@ -9,3 +9,33 @@
     font-family: 'font2';
     src: url(/fonts/Lausanne-500.woff2);
 }
+
+.link{
+    animation: linkHover linear 10s infinite alternate;
+}
+.linkcontainer{
+    opacity: .5;
+    height: 0;
+    scale: 1.1;
+    overflow: hidden;
+    transition: .3s;
+
+}
+.linktext:hover .linkcontainer{
+
+   opacity: 1;
+   scale: 1;
+   transition: .3s;
+   cursor: pointer;
+   height: 100%;
+}
+
+@keyframes linkHover {
+    from{
+        transform: translateX(0%);
+
+    }
+    to{
+        transform: translateX(-80%);
+    }
+}
