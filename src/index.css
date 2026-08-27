@@ -11,7 +11,7 @@
 }
 
 .link{
-    animation: linkHover linear 10s infinite alternate;
+    animation: linkHover linear 7s infinite alternate;
 }
 .linkcontainer{
     opacity: .5;

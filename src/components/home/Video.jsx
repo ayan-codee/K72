@@ -4,7 +4,7 @@ import vid from '../../assets/videos/heroVid.mp4'
 const Video = () => {
   return (
         <div className='h-full w-full'>
-            <video className='h-full w-full object-cover' autoPlay loop muted>
+            <video className='h-full w-full object-cover' preload="auto" autoPlay loop muted>
                 <source  src={vid}/>
             </video>
         </div>

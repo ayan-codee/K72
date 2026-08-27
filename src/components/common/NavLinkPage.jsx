@@ -36,8 +36,13 @@ const NavLinkPage = () => {
             duration: 0.8,
             ease: "power2.inOut"
         })
+        gsap.from('.linktext',{
+            delay:1,
+            rotateX:90,
+            stagger:0.2
+        })
 
-            .to('.amimContainer', {
+            tl.to('.amimContainer', {
                 display: 'none',
                 duration: 0
             });

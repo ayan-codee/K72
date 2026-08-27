@@ -21,8 +21,9 @@ const Stair = (props) => {
             duration: 0.8,
             ease: "power2.inOut"
         })
+        
 
-            .to('.amimContainer', {
+            tl.to('.amimContainer', {
                 display: 'none',
                 duration: 0
             });
