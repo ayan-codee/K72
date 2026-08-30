@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @font-face {
     font-family: 'font1';
     src: url(/fonts/Lausanne-300.woff2);
@@ -9,6 +8,12 @@
     font-family: 'font2';
     src: url(/fonts/Lausanne-500.woff2);
 }
+
+body{
+     font-family: 'font1';
+
+}
+
 
 .link{
     animation: linkHover linear 7s infinite alternate;

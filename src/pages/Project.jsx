@@ -9,28 +9,28 @@ gsap.registerPlugin(ScrollTrigger);
 const Project = () => {
   const imagesData = [
     {
-      image1:'src/assets/images/projectImages/CF_thumbnail.webp',
-      image2:'src/assets/images/projectImages/OKA_thumbnail.webp'
+      image1:'/images/projectImages/CF_thumbnail.webp',
+      image2:'/images/projectImages/OKA_thumbnail.webp'
     },
     {
-      image1:'src/assets/images/projectImages/opto_thumbnail2.webp',
-      image2:'src/assets/images/projectImages/PJC_SiteK72_Thumbnail_1280x960.webp'
+      image1:'/images/projectImages/opto_thumbnail2.webp',
+      image2:'/images/projectImages/PJC_SiteK72_Thumbnail_1280x960.webp'
     },
     {
-      image1:'src/assets/images/projectImages/WS---K72.ca---Thumbnail.webp',
-      image2:'src/assets/images/projectImages/thumbnailimage_shelton.webp'
+      image1:'/images/projectImages/WS---K72.ca---Thumbnail.webp',
+      image2:'/images/projectImages/thumbnailimage_shelton.webp'
     },
     {
-      image1:'src/assets/images/projectImages/thumbnailimage_OSM.webp',
-      image2:'src/assets/images/projectImages/thumbnailimage_atable2.webp'
+      image1:'/images/projectImages/thumbnailimage_OSM.webp',
+      image2:'/images/projectImages/thumbnailimage_atable2.webp'
     },
     {
-      image1:'src/assets/images/projectImages/chalaxeur-thumbnail_img.webp',
-      image2:'src/assets/images/projectImages/PME-MTL_Thumbnail.webp'
+      image1:'/images/projectImages/chalaxeur-thumbnail_img.webp',
+      image2:'/images/projectImages/PME-MTL_Thumbnail.webp'
     },
     {
-      image1:'src/assets/images/projectImages/100temps_Thumbnail.webp',
-      image2:'src/assets/images/projectImages/crisis24_behance_1920X1200_carte.webp'
+      image1:'/images/projectImages/100temps_Thumbnail.webp',
+      image2:'/images/projectImages/crisis24_behance_1920X1200_carte.webp'
     }
   ];
 
@@ -45,7 +45,6 @@ const Project = () => {
                 trigger:'.lol',
                 start:"top 100%",
                 end:"top -150%",
-                markers:true,
                 scrub:true
             },
             
