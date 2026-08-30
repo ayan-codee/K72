@@ -60,7 +60,7 @@ const Project = () => {
 
       <div className='lol'>
         {imagesData.map((elem, idx)=>{
-           return <div className='w-full hero font-[font2]  flex gap-2 mt-2 h-120'>
+           return <div className='w-full hero font-[font2] lg:flex-row md:flex-row flex flex-col  gap-2 mt-2 h-150 lg:h-150'>
               <ProjectCards  key={idx} image1={elem.image1} image2={elem.image2}/>
           </div>
         })}

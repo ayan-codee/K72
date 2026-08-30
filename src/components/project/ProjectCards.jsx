@@ -4,7 +4,7 @@ const ProjectCards = (props) => {
    
   return (
     <>
-          <div className='w-1/2 lol relative group cursor-pointer hover:rounded-4xl transition-all overflow-hidden duration-200 h-full bg-blue-400'>
+          <div className='lg:w-1/2 lol relative group cursor-pointer hover:rounded-4xl transition-all overflow-hidden duration-200 h-full bg-blue-400'>
           <img src={props.image1} 
           loading="lazy" alt="Project"
           className='w-full h-full object-cover group-hover:scale-105 transition-all' />
@@ -13,7 +13,7 @@ const ProjectCards = (props) => {
           </div>
           </div>
           
-          <div className='w-1/2 lol relative group cursor-pointer hover:rounded-4xl transition-all overflow-hidden duration-200 h-full bg-blue-400'>
+          <div className='lg:w-1/2 lol relative group cursor-pointer hover:rounded-4xl transition-all overflow-hidden duration-200 h-full bg-blue-400'>
           <img src={props.image2} 
           loading="lazy" alt="Project"
           className='w-full  h-full object-cover group-hover:scale-105 transition-all'/>
