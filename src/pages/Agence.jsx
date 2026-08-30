@@ -63,7 +63,7 @@ const Agence = () => {
     overflow-hidden rounded-2xl shadow-sm shadow-black
   '
         >
-          <img ref={imgRef} className='w-full h-full object-cover' src={img} alt="Loading..." />
+          <img ref={imgRef} src={img} loading="lazy" alt="Project" className='w-full h-full object-cover'  />
         </div>
         <div className='mt-[55vh] font-[font2] relative text-black'>
           <h1 className='text-black text-[20vw]  leading-[17vw] uppercase text-center'>
