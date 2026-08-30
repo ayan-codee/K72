@@ -1,13 +1,18 @@
 import React from 'react'
-import vid from '../../assets/videos/heroVid.mp4'
 
 const Video = () => {
   return (
-        <div className='h-full w-full'>
-            <video className='h-full w-full object-cover' preload="auto" autoPlay loop muted>
-                <source  src={vid}/>
-            </video>
-        </div>
+    <div className='h-full w-full'>
+      <video 
+        className='h-full w-full object-cover' 
+        src="/videos/heroVid.mp4" 
+        preload="auto" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+      />
+    </div>
   )
 }
 
