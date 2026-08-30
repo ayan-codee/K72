@@ -2,14 +2,14 @@ import { useGSAP } from '@gsap/react'
 import React, { useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import img from '../../src/assets/images/character/Carl_480x640.webp'
-import img1 from '../../src/assets/images/character/CAMILLE_480X640_2.webp'
-import img2 from '../../src/assets/images/character/ChantalG_480x640.webp'
-import img3 from '../../src/assets/images/character/joel_480X640_3.webp'
-import img4 from '../../src/assets/images/character/MEGGIE_480X640_2.webp'
-import img5 from '../../src/assets/images/character/MEL_480X640.webp'
-import img6 from '../../src/assets/images/character/Michele_480X640.webp'
-import img7 from '../../src/assets/images/character/Olivier_480x640.webp'
+import img from  '/images/character/Carl_480x640.webp'
+import img1 from '/images/character/CAMILLE_480X640_2.webp'
+import img2 from '/images/character/ChantalG_480x640.webp'
+import img3 from '/images/character/joel_480X640_3.webp'
+import img4 from '/images/character/MEGGIE_480X640_2.webp'
+import img5 from '/images/character/MEL_480X640.webp'
+import img6 from '/images/character/Michele_480X640.webp'
+import img7 from '/images/character/Olivier_480x640.webp'
 
 
 const Agence = () => {

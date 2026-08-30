@@ -32,12 +32,10 @@ const Stair = (props) => {
 
     return (
         <div className='amimContainer w-screen h-screen fixed top-0 left-0 flex z-50'>
-            <div className={`stair lg:lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
-            <div className={`stair lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
-            <div className={`stair lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
-            <div className={`stair lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
-            <div className={`stair lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
-            <div className={`stair lg:w-1/6 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
+            <div className={`stair lg:lg:w-1/4 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
+            <div className={`stair lg:w-1/4 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
+            <div className={`stair lg:w-1/4 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
+            <div className={`stair lg:w-1/4 h-full ${props.bg || 'bg-black'} pointer-events-auto`}></div>
         </div>
     )
 }
