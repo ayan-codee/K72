@@ -78,34 +78,34 @@ const NavLinkPage = () => {
                     </div>
                 </div>
 
-                <div className='py-40'>
+                <div className='lg:py-40 py-60'>
                     <div className='linktext border-t  border-gray-500 relative overflow-hidden'>
-                        <h1 className='text-[7vw]  leading-none pt-5 text-center uppercase'>work</h1>
+                        <h1 className='lg:text-[7vw]   text-[12vw]  leading-none pt-5 text-center uppercase'>work</h1>
 
                         <div className='w-full linkcontainer absolute top-0 bg-[#d3fd50]   h-full'>
                             <div className='flex link w-full h-full flex-nowrap items-center gap-5'>
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]    text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/K72_article_ChatGPT_blogue.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/Capture_d’ecran_le_2025-09-17_a.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>see everything</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/PJC_SiteK72_Thumbnail_640x290.webp" alt="" />
                             </div>
                         </div>
                     </div>
 
                     <div className='linktext border-t border-gray-500 relative overflow-hidden'>
-                        <h1 className='text-[7vw] leading-none pt-5  p-0 text-center uppercase'>agency</h1>
+                        <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>agency</h1>
 
                         <div className='w-full linkcontainer absolute top-0  bg-[#d3fd50]   h-full'>
                             <div className='flex link w-full h-full flex-nowrap items-center gap-5'>
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/Thumbnail.webp" alt="" />
 
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/PJC_SiteK72_Thumbnail_640x290.webp" alt="" />
 
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>know us</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/Michele_640x290.webp" alt="" />
 
                             </div>
@@ -113,30 +113,30 @@ const NavLinkPage = () => {
                     </div>
 
                     <div className='linktext border-t border-gray-500 relative'>
-                        <h1 className='text-[7vw] leading-none pt-5  p-0 text-center uppercase'>contact</h1>
+                        <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>contact</h1>
 
                         <div className='w-full linkcontainer absolute top-0  bg-[#d3fd50]   h-full'>
                             <div className='flex link w-full h-full flex-nowrap items-center gap-5'>
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/K72_article_ChatGPT_blogue.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/K72_article_ChatGPT_blogue.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black leading-none pt-5  p-0 text-center uppercase'>send us a fax</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/K72_article_ChatGPT_blogue.webp" alt="" />
                             </div>
                         </div>
                     </div>
 
                     <div className='linktext border-y border-gray-500 relative'>
-                        <h1 className='text-[7vw] leading-none pt-5  p-0 text-center uppercase'>blog</h1>
+                        <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>blog</h1>
 
                         <div className='w-full linkcontainer absolute top-0  bg-[#d3fd50]   h-full'>
                             <div className='flex link w-full h-full flex-nowrap items-center gap-5'>
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>read articles</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>read articles</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/Capture_d’ecran_le_2025-09-17_a.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>read articles</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>read articles</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="src/assets/images/navbarImages/50ff59cc0550df5b36543807a58db98c.webp" alt="" />
-                                <h1 className='text-[7vw] text-nowrap text-black  leading-23 pt-5  p-0 text-center uppercase'>read articles</h1>
+                                <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-23 pt-5  p-0 text-center uppercase'>read articles</h1>
                                 <img className='h-[5vw] shrink-0 rounded-full w-[12vw]      object-cover' src="D:\Websites\K72\K72 YT\src\assets\images\navbarImages\Michele_640x290.webp" alt="" />
                             </div>
                         </div>
