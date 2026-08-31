@@ -3,6 +3,7 @@ import ProjectCards from '../components/project/ProjectCards';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
+import Footer from '../components/common/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,8 +53,8 @@ const Project = () => {
     })
 
   return (
-    <div className='pt-[45vh] text-black p-4'>
-      <div className='flex lg:-mb-[3vh]'>
+    <div className='pt-[45vh] text-black'>
+      <div className='flex lg:-mb-[3vh] p-4'>
         <h1 className='font-[font2] leading-none uppercase text-[12vw]'>works</h1>
         <span className='text-[2vw] font-[font1]'>{imagesData.length * 2}</span>
       </div>
@@ -65,6 +66,7 @@ const Project = () => {
           </div>
         })}
       </div>
+      <Footer/>
     </div>
   )
 }

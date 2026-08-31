@@ -11,6 +11,7 @@ import img5 from '/images/character/MEL_480X640.webp'
 import img6 from '/images/character/Michele_480X640.webp'
 import img7 from '/images/character/Olivier_480x640.webp'
 import Sec2text from '../components/agence/sec2-text';
+import Footer from '../components/common/Footer';
 
 
 const Agence = () => {
@@ -69,17 +70,42 @@ const Agence = () => {
       });
     });
 
-    gsap.utils.toArray('.card').forEach((card) => {
-      gsap.to(card, {
-        scrollTrigger: {
-          trigger: card,
-          start: 'top top',
-          pin: true,
-          pinSpacing: false, // Ek ke baad ek upar aakar rukne ke liye
-          scrub: true,
-          end: '+=100%',
-        }
-      });
+   gsap.to("body", {
+  backgroundColor: "#000000", 
+  color: "#ffffff",           
+  scrollTrigger: {
+    trigger: "#target-section",
+    start: "top center",
+    toggleActions: "play reverse play reverse", // Yeh bina scrub ke instant switch aur wapas jane par revert karega
+  }
+});
+
+
+
+
+gsap.utils.toArray('.card').forEach((card) => {
+  const textBox = card.querySelector('.absolute');
+
+  gsap.to(textBox, {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: card,
+      start: 'top top',
+      end: '+=50%',
+      scrub: true,
+    }
+  });
+
+  gsap.to(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: 'top top',
+      pin: true,
+      pinSpacing: false, 
+      scrub: true,
+      end: '+=100%',
+    }
+  });
     });
 
   });
@@ -117,20 +143,38 @@ const Agence = () => {
       </div>
 
       {/* section 3 start */}
-      <div className='w-full bg-black'>
-        <div ref={imgref} className='card h-[100vh] relative z-10'>
-          <img className='h-full rounded-4xl mx-auto' src="/images/character/CAMILLE_480X640_2.webp" alt="" />
+      <div id='target-section' className='w-full '>
+        <div ref={imgref} className='card h-[100vh] relative z-9'>
+          <img className='h-full rounded-4xl mx-auto ' src="/images/character/CAMILLE_480X640_2.webp" alt="" />
+          <div className='absolute lg:top-10 top-70 p-3 leading-none '>
+          <h2 className='text-[7vw] lowercase text-[#d3fd50]'>CAMILLE</h2>
+          <p className='w-[400px] lg:text-3xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. </p>
+          </div>
         </div>
         <div ref={imgref} className=' card h-[100vh] relative z-11'>
           <img className='h-full rounded-4xl mx-auto' src="/images/character/Carl_480x640.webp" alt="" />
+          <div className='absolute lg:top-10 right-0 top-70 p-3 leading-none '>
+          <h2 className='text-[7vw] lowercase text-[#d3fd50]'>Carl</h2>
+          <p className='w-[400px] lg:text-3xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. </p>
+          </div>
         </div>
         <div ref={imgref} className='card h-[100vh] relative z-12'>
           <img className='h-full rounded-4xl mx-auto' src="/images/character/ChantalG_480x640.webp" alt="" />
+          <div className='absolute lg:top-10  top-70 p-3 leading-none '>
+          <h2 className='text-[7vw] lowercase text-[#d3fd50]'>Chantal</h2>
+          <p className='w-[400px] lg:text-3xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. </p>
+          </div>
         </div>
-        <div className='card h-[100vh] relative z-13'>
+        <div className=' card h-[100vh] relative z-13'>
           <img className='h-full rounded-4xl mx-auto' src="/images/character/joel_480X640_3.webp" alt="" />
+           <div className='absolute lg:top-10 right-0 top-70 p-3 leading-none '>
+          <h2 className='text-[7vw] lowercase text-[#d3fd50]'>joel</h2>
+          <p className='w-[400px] lg:text-3xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. </p>
+          </div>
         </div>
+
       </div>
+      <Footer/>
     </div>
   )
 }
