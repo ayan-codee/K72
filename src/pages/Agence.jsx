@@ -10,6 +10,7 @@ import img4 from '/images/character/MEGGIE_480X640_2.webp'
 import img5 from '/images/character/MEL_480X640.webp'
 import img6 from '/images/character/Michele_480X640.webp'
 import img7 from '/images/character/Olivier_480x640.webp'
+import Sec2text from '../components/agence/sec2-text';
 
 
 const Agence = () => {
@@ -42,6 +43,7 @@ const Agence = () => {
     }, [imgArr])
   }
 
+  const imgref = useRef(null)
 
   useGSAP(() => {
     let mm = gsap.matchMedia();
@@ -67,6 +69,19 @@ const Agence = () => {
       });
     });
 
+    gsap.utils.toArray('.card').forEach((card) => {
+      gsap.to(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: 'top top',
+          pin: true,
+          pinSpacing: false, // Ek ke baad ek upar aakar rukne ke liye
+          scrub: true,
+          end: '+=100%',
+        }
+      });
+    });
+
   });
   return (
     <div>
@@ -74,13 +89,13 @@ const Agence = () => {
         <div
           ref={imageContainerRef}
           className='
-    absolute 
-    lg:top-[25vh] top-[10vh] md:top-[25vh] 
-    left-[30vw] 
-    lg:w-[250px] lg:h-[350px] 
-    md:w-[250px] md:h-[350px] 
-    w-30 h-40
-    overflow-hidden rounded-2xl shadow-sm shadow-black
+            absolute 
+            lg:top-[25vh] top-[10vh] md:top-[25vh] 
+            left-[30vw] 
+            lg:w-[250px] lg:h-[350px] 
+            md:w-[250px] md:h-[350px] 
+            w-30 h-40
+            overflow-hidden rounded-2xl shadow-sm shadow-black
   '
         >
           <img ref={imgRef} src={imgArr[index]} loading="lazy" alt="Project" className='w-full h-full object-cover' />
@@ -97,8 +112,24 @@ const Agence = () => {
       </div>
 
       {/* section 2 start */}
-      <div className="section-2 h-screen bg-blue-100">
+      <div className="section-2 text-black lg:w-[85%]  w-full capitalize text-1xl mx-auto p-5 ">
+       <Sec2text/>
+      </div>
 
+      {/* section 3 start */}
+      <div className='w-full bg-black'>
+        <div ref={imgref} className='card h-[100vh] relative z-10'>
+          <img className='h-full rounded-4xl mx-auto' src="/images/character/CAMILLE_480X640_2.webp" alt="" />
+        </div>
+        <div ref={imgref} className=' card h-[100vh] relative z-11'>
+          <img className='h-full rounded-4xl mx-auto' src="/images/character/Carl_480x640.webp" alt="" />
+        </div>
+        <div ref={imgref} className='card h-[100vh] relative z-12'>
+          <img className='h-full rounded-4xl mx-auto' src="/images/character/ChantalG_480x640.webp" alt="" />
+        </div>
+        <div className='card h-[100vh] relative z-13'>
+          <img className='h-full rounded-4xl mx-auto' src="/images/character/joel_480X640_3.webp" alt="" />
+        </div>
       </div>
     </div>
   )
