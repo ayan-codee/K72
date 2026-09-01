@@ -158,7 +158,7 @@ gsap.utils.toArray('.card').forEach((card) => {
           <p className='w-[400px] lg:text-3xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. </p>
           </div>
         </div>
-        <div ref={imgref} className='card h-[100vh] relative z-12'>
+        <div ref={imgref}  className='card  h-[100vh] relative z-12'>
           <img className='h-full rounded-4xl mx-auto' src="/images/character/ChantalG_480x640.webp" alt="" />
           <div className='absolute lg:top-10  top-70 p-3 leading-none '>
           <h2 className='text-[7vw] lowercase text-[#d3fd50]'>Chantal</h2>
