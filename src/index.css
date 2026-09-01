@@ -34,6 +34,11 @@ body{
    cursor: pointer;
    height: 100%;
 }
+.contactText{
+        animation: contactline linear 20s infinite alternate;
+        transform: translateX(0);
+
+}
 
 @keyframes linkHover {
     from{
@@ -42,5 +47,13 @@ body{
     }
     to{
         transform: translateX(-80%);
+    }
+}
+@keyframes contactline {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }

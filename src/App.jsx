@@ -6,6 +6,8 @@ import Project from './pages/Project'
 import Navbar from './components/common/Navbar'
 import NavLinkPage from './components/common/NavLinkPage'
 import NavBarContextProvider from './components/common/NavBarContextProvider'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/agence' element={<Agence/>} />
         <Route path='/projects' element={<Project/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/blog' element={<Blog/>} />
       </Routes>
       </NavBarContextProvider>
     </div>

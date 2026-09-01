@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const Navbar = () => {
     let path = false;
     const navigate = useNavigate()
-    if(useLocation().pathname == '/agence' || useLocation().pathname == '/projects'){
+    if(useLocation().pathname == '/agence' || useLocation().pathname == '/projects' ||  useLocation().pathname == '/blog' ){
         path = true
     }
     const [nav, setNav] = useContext(NavBarContext);

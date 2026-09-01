@@ -3,7 +3,7 @@ import Stair from './Stair'
 import { NavBarContext } from './NavBarContextProvider'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-
+import { Link } from 'react-router-dom'
 
 const NavLinkPage = () => {
     const [nav, setNav] = useContext(NavBarContext);
@@ -53,7 +53,7 @@ const NavLinkPage = () => {
                 <div className='stair w-1/4 h-full  bg-gray-700 pointer-events-auto'></div>
             </div>
 
-            <div ref={navbarref} className='navcontainertransition-all w-screen h-screen bg-black fixed top-0  z-5 font-[font2] '>
+            <div ref={navbarref} className='navcontainertransition-all w-screen h-screen bg-black fixed top-0  z-20 font-[font2] '>
 
                 <div className='fixed p-2 w-screen flex justify-between'>
                     <div className='p-3 '>
@@ -72,6 +72,9 @@ const NavLinkPage = () => {
                 </div>
 
                 <div className='lg:py-40 py-80'>
+                    <Link to='/projects' onClick={()=>{
+                        setNav(false)
+                    }}>
                     <div className='linktext border-t  border-gray-500 relative overflow-hidden'>
                         <h1 className='lg:text-[7vw]   text-[12vw]  leading-none pt-5 text-center uppercase'>work</h1>
 
@@ -86,7 +89,11 @@ const NavLinkPage = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
 
+                     <Link to='/agence' onClick={()=>{
+                        setNav(false)
+                    }}>
                     <div className='linktext border-t border-gray-500 relative overflow-hidden'>
                         <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>agency</h1>
 
@@ -104,7 +111,11 @@ const NavLinkPage = () => {
                             </div>
                         </div>
                     </div>
+                     </Link>
 
+                     <Link to='/contact' onClick={()=>{
+                        setNav(false)
+                    }}>
                     <div className='linktext border-t border-gray-500 relative'>
                         <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>contact</h1>
 
@@ -119,7 +130,11 @@ const NavLinkPage = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
 
+                    <Link to='/blog' onClick={()=>{
+                        setNav(false)
+                    }}>
                     <div className='linktext border-y border-gray-500 relative'>
                         <h1 className='lg:text-[7vw]  text-[12vw]   leading-none pt-5  p-0 text-center uppercase'>blog</h1>
 
@@ -130,10 +145,11 @@ const NavLinkPage = () => {
                                 <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-none pt-5  p-0 text-center uppercase'>read articles</h1>
                                <img className='lg:h-[5vw] h-[7vw] shrink-0 rounded-full lg:w-[12vw] w-[20vw]      object-cover' src="/images/navbarImages/50ff59cc0550df5b36543807a58db98c.webp" alt="" />
                                 <h1 className='lg:text-[7vw]  text-[12vw]   text-nowrap text-black  leading-23 pt-5  p-0 text-center uppercase'>read articles</h1>
-                               <img className='lg:h-[5vw] h-[7vw] shrink-0 rounded-full lg:w-[12vw] w-[20vw]      object-cover' src="D:\Websites\K72\K72 YT\src\assets\images\navbarImages\Michele_640x290.webp" alt="" />
+                               <img className='lg:h-[5vw] h-[7vw] shrink-0 rounded-full lg:w-[12vw] w-[20vw]      object-cover' src="public/images/character/Michele_480X640.webp" alt="" />
                             </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             </div>
         </>
